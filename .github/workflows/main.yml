@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: PixelExperience-Devices/kernel_xiaomi_sdm845
-  kernel_branch: fourteen
+  kernel_repository: hfdem/android_gki_kernel_5.15_common
+  kernel_branch: android13-5.15-2024-09
   device: dipper
-  clang_version: r487747c
+  clang_version: 17
   defconfig: |
-    dipper_defconfig
+    gki_defconfig
   kernel_patch: |
     backport-path-umount.patch
   kernelsu_patch: |
